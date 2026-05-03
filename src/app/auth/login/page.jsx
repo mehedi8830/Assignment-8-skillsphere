@@ -59,7 +59,7 @@ export default function LoginPage() {
           }}
         >
           <Label>Email</Label>
-          <Input placeholder="john@example.com" />
+          <Input placeholder="mehedihassan8830@gmail.com." />
           <FieldError />
         </TextField>
 
