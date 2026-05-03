@@ -5,19 +5,21 @@ import { BiBriefcaseAlt2 } from 'react-icons/bi';
 import { FaStar, FaUserGraduate } from 'react-icons/fa6';
 
 const TopInstructor = async() => {
-    const res = await fetch("http://localhost:3000/instructor.json");
+    const res = await fetch(
+      "https://skillsphere-rho.vercel.app/instructor.json",
+    );
     const instructors = await res.json();
 
     return (
-      <div className="my-20 w-6xl mx-auto">
-        <h2 className="text-center my-10 font-bold text-3xl">
+      <div className="my-20 max-w-6xl mx-auto px-6">
+        <h2 className="text-center my-10 font-bold text-4xl">
           Top Instructors
         </h2>
-        <div className="grid grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {instructors.map((instructor) => (
             <div
               key={instructor.id}
-              className="card bg-base-100 shadow-xl rounded-xl overflow-hidden w-87.5 hover:-translate-y-2.5 transition-transform duration-500"
+              className="card bg-base-100 shadow-xl rounded-xl w-full hover:-translate-y-2.5 transition-transform duration-500"
             >
               <figure className="relative">
                 <Image

@@ -4,7 +4,7 @@ import logo from "../../../../public/logo.jpg";
 
 const Footer = () => {
   return (
-    <footer className="relative mt-24">
+    <footer className="relative">
       <div className="mt-12 h-px w-full bg-linear-to-r from-transparent via-gray-300 to-transparent dark:via-white/10" />
 
       <div className="absolute inset-0 -z-10 bg-white dark:bg-[#0a0a0b]" />
@@ -15,10 +15,8 @@ const Footer = () => {
         dark:from-purple-500/10 dark:to-blue-500/10 blur-3xl"
       />
 
-      {/* Content */}
-      <div className="max-w-7xl mx-auto px-6 py-16">
+      <div className="max-w-7xl mx-auto px-6 py-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
-          {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <Image
@@ -39,7 +37,6 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Courses */}
           <div>
             <h3 className="text-sm font-semibold text-black dark:text-white mb-4">
               Courses
@@ -73,7 +70,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Company */}
           <div>
             <h3 className="text-sm font-semibold text-black dark:text-white mb-4">
               Company
@@ -106,7 +102,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* CTA Block */}
           <div className="space-y-4">
             <h3 className="text-sm font-semibold text-black dark:text-white">
               Start learning today
@@ -117,7 +112,7 @@ const Footer = () => {
             </p>
 
             <Link
-              href="/signup"
+              href="/auth/login"
               className="inline-flex items-center justify-center px-5 py-2.5 rounded-full 
               bg-black text-white dark:bg-white dark:text-black 
               text-sm font-medium transition-all duration-200 
@@ -128,10 +123,8 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Divider */}
         <div className="mt-12 h-px w-full bg-linear-to-r from-transparent via-gray-300 to-transparent dark:via-white/10" />
 
-        {/* Bottom */}
         <div className="mt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500 dark:text-gray-400">
           <p>© {new Date().getFullYear()} SkillSphere. All rights reserved.</p>
 

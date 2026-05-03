@@ -3,19 +3,14 @@
 import { UpdateUserModal } from "@/components/UpdateUserModal";
 import { authClient } from "@/lib/auth-client";
 import { Avatar, Card } from "@heroui/react";
-import { redirect } from "next/navigation";
 
 const ProfilePage = () => {
   const userData = authClient.useSession();
   const user = userData.data?.user;
 
-  //   if(!user) {
-  //     redirect('/signin')
-  //   }
-
   return (
     <div>
-      <Card className="max-w-96 mx-auto flex flex-col items-center border mt-5">
+      <Card className="max-w-96 mx-auto flex flex-col items-center border border-gray-300 mt-5">
         <Avatar className="h-20 w-20">
           <Avatar.Image
             alt="John Doe"

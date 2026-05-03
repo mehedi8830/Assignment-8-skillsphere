@@ -2,6 +2,7 @@ import { Geist, Geist_Mono, Roboto } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/ui/shared/Navbar";
 import Footer from "@/components/ui/shared/Footer";
+import { ToastContainer } from "react-toastify";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -17,13 +18,15 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
+      data-theme="light"
       className={`${roboto.className} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         <Navbar />
         <main>{children}</main>
         <Footer />
-        </body>
+        <ToastContainer />
+      </body>
     </html>
   );
 }

@@ -1,10 +1,12 @@
 "use client";
 import { useState } from "react";
-import { Button } from "@heroui/react";
+import { Avatar, Button } from "@heroui/react";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "../../../../public/logo.jpg";
 import { usePathname } from "next/navigation";
+import { authClient } from "@/lib/auth-client";
+import { toast } from "react-toastify";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -36,8 +38,15 @@ const Navbar = () => {
       </li>
     </>
   );
-const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const userData = authClient.useSession();
+  const user = userData.data?.user;
+
+  const handleSignOut = async () => {
+    await authClient.signOut();
+    toast.warning("Logged out successfully");
+  };
   return (
     <nav className="sticky top-0 z-40 w-full border-b border-separator bg-background/70 backdrop-blur-lg">
       <header className="flex h-16 items-center justify-between px-6">
@@ -84,27 +93,53 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
           </div>
         </div>
         <ul className="hidden items-center gap-4 md:flex">{links}</ul>
+
         <div className="flex gap-4">
-          <ul className="text-lg bg-[#2e3c8f] text-white px-4 py-3 rounded-lg">
-            <li>
-              <Link href={"/auth/login"}>Login / Register</Link>
-            </li>   
-          </ul>
+          {!user && (
+            <ul className="text-xs md:text-lg bg-[#2e3c8f] text-white px-2 md:px-4 py-3 rounded-lg">
+              <li>
+                <Link href={"/auth/login"}>Login / Register</Link>
+              </li>
+            </ul>
+          )}
+
+          {user && (
+            <div className="flex gap-2 items-center">
+              <div className="hidden md:flex">
+                Hello, <span className="font-medium">{user.name}</span>
+              </div>
+              <Avatar>
+                <Avatar.Image alt="John Doe" src={user?.image} />
+                <Avatar.Fallback>{user.name[0]}</Avatar.Fallback>
+              </Avatar>
+              <Button
+                className="bg-[#2e3c8f] hidden md:flex"
+                onClick={handleSignOut}
+              >
+                Logout
+              </Button>
+            </div>
+          )}
         </div>
       </header>
+
       {isMenuOpen && (
         <div className="border-t border-separator md:hidden">
-          <ul className="flex flex-col gap-2 p-4">{links}</ul>
+          <ul className="flex flex-col gap-2 p-4">
+            {links}
+            <li>
+              <Button
+                className="bg-[#2e3c8f]"
+                onClick={handleSignOut}
+              >
+                Logout
+              </Button>
+            </li>
+          </ul>
         </div>
       )}
     </nav>
   );
-  
 };
 
 export default Navbar;
-
-
-
-
-
