@@ -77,7 +77,7 @@ const Footer = () => {
             <ul className="space-y-3 text-sm text-gray-600 dark:text-gray-400">
               <li>
                 <Link
-                  href="/about"
+                  href="#"
                   className="hover:text-black dark:hover:text-white transition"
                 >
                   About
@@ -85,7 +85,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="/contact"
+                  href="#"
                   className="hover:text-black dark:hover:text-white transition"
                 >
                   Contact
@@ -93,7 +93,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="/terms"
+                  href="#"
                   className="hover:text-black dark:hover:text-white transition"
                 >
                   Terms

@@ -11,9 +11,10 @@ import {
   Label,
   TextField,
 } from "@heroui/react";
-import { redirect } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 export default function SignUpPage() {
+  const router = useRouter()
   const onSubmit = async (e) => {
     e.preventDefault();
     const formData = new FormData(e.target);
@@ -28,7 +29,7 @@ export default function SignUpPage() {
     });
     console.log("Sign Up Data:", data, "Error:", error);
     if (data) {
-      redirect("/");
+   router.push("/")
     }
   };
 
@@ -63,8 +64,7 @@ export default function SignUpPage() {
             }}
           >
             <Label>Email</Label>
-            <Input placeholder="mehedihassan8830@gmail.com
-" />
+            <Input placeholder="mehedihassan8830@gmail.com" />
             <FieldError />
           </TextField>
 

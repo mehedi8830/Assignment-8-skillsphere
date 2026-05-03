@@ -18,7 +18,7 @@ const CourseDetails = async ({ params }) => {
   }
 
   return (
-    <Card className="w-6xl mx-auto items-stretch md:flex-row my-10 gap-5">
+    <Card className="max-w-6xl mx-auto items-stretch md:flex-row my-10 gap-5">
       <div className="relative h-35 w-full shrink-0 overflow-hidden rounded-2xl md:h-100 md:w-120">
         <Image
           width={500}
@@ -30,8 +30,8 @@ const CourseDetails = async ({ params }) => {
         />
       </div>
       <div className="flex flex-1 flex-col gap-3">
-        <Card.Header className="gap-1">
-          <Card.Title className="pr-8 text-3xl font-bold">
+        <Card.Header className="gap-2">
+          <Card.Title className="pr-8 text-3xl font-bold leading-snug">
             {course.title}
           </Card.Title>
           <Card.Description className="text-lg">

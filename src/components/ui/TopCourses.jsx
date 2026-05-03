@@ -8,7 +8,7 @@ const TopCourses = async () => {
     const courses = await res.json();
     const topCourses = courses.slice(0, 3);
     return (
-      <div className="my-20 max-w-7xl mx-auto px-6">
+      <div id="top-courses" className="my-30 max-w-7xl mx-auto px-6">
         <h1 className="text-4xl font-bold my-10 text-center">Top Courses</h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">

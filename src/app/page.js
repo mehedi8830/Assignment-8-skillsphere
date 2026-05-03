@@ -1,4 +1,5 @@
 import Banner from "@/components/ui/Banner";
+import NewReleases from "@/components/ui/NewRealeses";
 import TopCourses from "@/components/ui/TopCourses";
 import TopInstructor from "@/components/ui/TopInstructor";
 
@@ -8,6 +9,7 @@ export default function Home() {
       <Banner />
       <TopCourses />
       <TopInstructor />
+      <NewReleases />
     </div>
   );
 }
