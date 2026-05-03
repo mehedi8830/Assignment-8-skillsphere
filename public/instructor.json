@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "name": "James Anderson",
+    "title": "Senior Software Engineer",
+    "specialization": "Full-Stack Development",
+    "rating": 4.9,
+    "students": 11000,
+    "courses": 9,
+    "experience": "11+ years",
+    "image": "https://i.pravatar.cc/400?img=12",
+    "backgroundImg": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
+    "bio": "Experienced full-stack developer specializing in scalable web applications and backend systems."
+  },
+  {
+    "id": 2,
+    "name": "Daniel Roberts",
+    "title": "Frontend Developer",
+    "specialization": "React & Next.js",
+    "rating": 4.8,
+    "students": 9200,
+    "backgroundImg": "https://www.theamericanacademy.com/cdn/shop/articles/1154551314197032.w2jwTajEFOv5KmkfpDWz_height640_1024x1024.png?v=1576868846",
+    "courses": 6,
+    "experience": "8+ years",
+    "image": "https://i.pravatar.cc/400?img=13",
+    "bio": "Focused on building fast and responsive UI using modern JavaScript frameworks."
+  },
+  {
+    "id": 3,
+    "name": "Ryan Mitchell",
+    "title": "DevOps Engineer",
+    "specialization": "Cloud & Infrastructure",
+    "rating": 4.7,
+    "students": 7800,
+    "courses": 5,
+    "experience": "9+ years",
+    "image": "https://t4.ftcdn.net/jpg/03/69/19/81/360_F_369198116_K0sFy2gRTo1lmIf5jVGeQmaIEibjC3NN.jpg",
+    "backgroundImg": "https://media.licdn.com/dms/image/v2/D4D12AQEGktzMiFJ8Cg/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1675193385885?e=2147483647&v=beta&t=uCVpjope9xEnUDQkN3RZHhT6bmZArooJx4DF_7-bl-w",
+    "bio": "Specialist in cloud infrastructure, CI/CD pipelines, and scalable deployment systems."
+  }
+]

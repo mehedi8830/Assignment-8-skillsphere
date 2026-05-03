@@ -1,0 +1,254 @@
+[
+  {
+    "id": 1,
+    "title": "Complete Web Development Bootcamp",
+    "instructor": "John Doe",
+    "duration": "20 hours",
+    "rating": 4.8,
+    "level": "Beginner",
+    "description": "Learn full-stack web development from scratch.",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "category": "Development",
+    "curriculum": [
+      "HTML Basics",
+      "CSS Fundamentals",
+      "JavaScript Essentials",
+      "DOM Manipulation",
+      "Responsive Design",
+      "Node.js Basics",
+      "MongoDB Introduction",
+      "Deploying Projects"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Advanced JavaScript Mastery",
+    "instructor": "Jane Smith",
+    "duration": "15 hours",
+    "rating": 4.7,
+    "level": "Intermediate",
+    "description": "Deep dive into modern JavaScript concepts.",
+    "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
+    "category": "Development",
+    "curriculum": [
+      "Closures & Scope",
+      "Promises & Async/Await",
+      "Event Loop",
+      "ES6+ Features",
+      "Modules",
+      "Error Handling",
+      "Performance Optimization",
+      "Design Patterns"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "React for Beginners",
+    "instructor": "Michael Lee",
+    "duration": "18 hours",
+    "rating": 4.6,
+    "level": "Beginner",
+    "description": "Build dynamic web apps using React.",
+    "image": "https://images.unsplash.com/photo-1633356122544-f134324a6cee",
+    "category": "Development",
+    "curriculum": [
+      "JSX Basics",
+      "Components & Props",
+      "State Management",
+      "Event Handling",
+      "React Hooks",
+      "Routing",
+      "API Integration",
+      "Project Build"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "UI/UX Design Fundamentals",
+    "instructor": "Emily Davis",
+    "duration": "12 hours",
+    "rating": 4.5,
+    "level": "Beginner",
+    "description": "Learn the basics of UI/UX design principles.",
+    "image": "https://images.unsplash.com/photo-1559028012-481c04fa702d",
+    "category": "Design",
+    "curriculum": [
+      "Design Principles",
+      "Color Theory",
+      "Typography",
+      "Wireframing",
+      "User Research",
+      "Usability Testing",
+      "Prototyping",
+      "Design Systems"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Figma to Prototyping",
+    "instructor": "David Brown",
+    "duration": "10 hours",
+    "rating": 4.6,
+    "level": "Intermediate",
+    "description": "Create stunning UI designs and prototypes in Figma.",
+    "image": "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e",
+    "category": "Design",
+    "curriculum": [
+      "Figma Interface",
+      "Frames & Layouts",
+      "Components",
+      "Auto Layout",
+      "Prototyping",
+      "Design Collaboration",
+      "Plugins Usage",
+      "Exporting Assets"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Python Programming Bootcamp",
+    "instructor": "Chris Wilson",
+    "duration": "25 hours",
+    "rating": 4.9,
+    "level": "Beginner",
+    "description": "Master Python programming from zero to advanced.",
+    "image": "https://images.unsplash.com/photo-1526378722484-cc5c510b0c6d",
+    "category": "Development",
+    "curriculum": [
+      "Python Basics",
+      "Data Types",
+      "Control Flow",
+      "Functions",
+      "OOP in Python",
+      "File Handling",
+      "Libraries & Modules",
+      "Project Building"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Data Science with Python",
+    "instructor": "Sophia Martinez",
+    "duration": "22 hours",
+    "rating": 4.7,
+    "level": "Intermediate",
+    "description": "Analyze data and build models using Python.",
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
+    "category": "Data Science",
+    "curriculum": [
+      "NumPy Basics",
+      "Pandas for Data Analysis",
+      "Data Cleaning",
+      "Data Visualization",
+      "Statistics Basics",
+      "Machine Learning Intro",
+      "Model Evaluation",
+      "Mini Projects"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Machine Learning A-Z",
+    "instructor": "Daniel Anderson",
+    "duration": "30 hours",
+    "rating": 4.8,
+    "level": "Advanced",
+    "description": "Learn machine learning algorithms and applications.",
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475",
+    "category": "Data Science",
+    "curriculum": [
+      "Supervised Learning",
+      "Unsupervised Learning",
+      "Regression Models",
+      "Classification Models",
+      "Clustering",
+      "Neural Networks",
+      "Model Optimization",
+      "Real-world Projects"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Digital Marketing Essentials",
+    "instructor": "Olivia Taylor",
+    "duration": "14 hours",
+    "rating": 4.5,
+    "level": "Beginner",
+    "description": "Master SEO, social media, and online marketing.",
+    "image": "https://images.unsplash.com/photo-1533750349088-cd871a92f312",
+    "category": "Marketing",
+    "curriculum": [
+      "Marketing Basics",
+      "SEO Fundamentals",
+      "Content Marketing",
+      "Social Media Strategy",
+      "Email Marketing",
+      "Google Ads",
+      "Analytics Tools",
+      "Campaign Planning"
+    ]
+  },
+  {
+    "id": 10,
+    "title": "SEO Masterclass",
+    "instructor": "James Thomas",
+    "duration": "9 hours",
+    "rating": 4.4,
+    "level": "Intermediate",
+    "description": "Optimize websites for search engines effectively.",
+    "image": "https://images.unsplash.com/photo-1508830524289-0adcbe822b40",
+    "category": "Marketing",
+    "curriculum": [
+      "Keyword Research",
+      "On-page SEO",
+      "Off-page SEO",
+      "Technical SEO",
+      "Backlinks",
+      "Site Audits",
+      "SEO Tools",
+      "Ranking Strategies"
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Cyber Security Basics",
+    "instructor": "William Harris",
+    "duration": "16 hours",
+    "rating": 4.6,
+    "level": "Beginner",
+    "description": "Understand the fundamentals of cyber security.",
+    "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b",
+    "category": "Security",
+    "curriculum": [
+      "Security Fundamentals",
+      "Network Security",
+      "Cryptography Basics",
+      "Threats & Attacks",
+      "Authentication",
+      "Firewalls",
+      "Ethical Hacking Intro",
+      "Best Practices"
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Cloud Computing with AWS",
+    "instructor": "Emma Clark",
+    "duration": "20 hours",
+    "rating": 4.7,
+    "level": "Intermediate",
+    "description": "Learn cloud infrastructure and AWS services.",
+    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa",
+    "category": "Cloud",
+    "curriculum": [
+      "Cloud Basics",
+      "AWS Overview",
+      "EC2 & S3",
+      "IAM",
+      "Lambda Functions",
+      "Database Services",
+      "Deployment",
+      "Scaling & Monitoring"
+    ]
+  }
+]
