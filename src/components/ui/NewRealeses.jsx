@@ -18,7 +18,7 @@ const NewReleases = async() => {
                 key={course.id}
                 className="bg-[#462C7D] text-white rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform duration-500"
               >
-                <Image
+                <img
                   src={course.image}
                   width={500}
                   height={500}

@@ -81,7 +81,7 @@ const Navbar = () => {
             </svg>
           </button>
           <div className="flex gap-2 items-center">
-            <Image
+            <img
               src={logo}
               alt="logo"
               loading="eager"

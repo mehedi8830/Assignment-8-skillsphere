@@ -127,7 +127,7 @@ export default function LoginPage() {
             variant="secondary"
             onClick={handleGoogleSignIn}
           >
-            <Image src={google} alt="Google Logo" width={20} height={20} />
+            <img src={google} alt="Google Logo" width={20} height={20} />
             Sign in with Google
           </Button>
         </Card>

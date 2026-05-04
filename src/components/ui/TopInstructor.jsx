@@ -24,7 +24,7 @@ const TopInstructor = async() => {
               className="card bg-base-100 shadow-xl rounded-xl w-full hover:-translate-y-2.5 transition-transform duration-500"
             >
               <figure className="relative">
-                <Image
+                <img
                   width={400}
                   height={400}
                   src={instructor.backgroundImg}
@@ -41,7 +41,7 @@ const TopInstructor = async() => {
                 </div>
 
                 <div className="absolute bottom-3 left-3 flex items-center gap-2">
-                  <Image
+                  <img
                     width={400}
                     height={400}
                     src={instructor.image}

@@ -21,7 +21,7 @@ const CourseDetails = async ({ params }) => {
   return (
     <Card className="max-w-6xl mx-auto items-stretch md:flex-row my-10 gap-5">
       <div className="relative h-35 w-full shrink-0 overflow-hidden rounded-2xl md:h-100 md:w-120">
-        <Image
+        <img
           width={500}
           height={500}
           alt="Cherries"

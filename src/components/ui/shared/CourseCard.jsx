@@ -6,7 +6,7 @@ const CourseCard = ({ course }) => {
   return (
     <Card className="border border-gray-300 shadow-lg rounded-xl hover:-translate-y-2.5 transition-transform duration-500">
       <div className="relative w-full aspect-square">
-        <Image
+        <img
           src={course.image}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
