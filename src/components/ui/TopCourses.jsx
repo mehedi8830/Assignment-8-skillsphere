@@ -3,7 +3,7 @@ import CourseCard from './shared/CourseCard';
 
 const TopCourses = async () => {
      const res = await fetch(
-       "https://skillsphere-rho.vercel.app/data.json",
+       `${process.env.BASE_URL}/data.json`,
      );
     const courses = await res.json();
     const topCourses = courses.slice(0, 3);

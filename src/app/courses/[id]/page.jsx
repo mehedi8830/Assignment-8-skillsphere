@@ -5,7 +5,7 @@ import { IoIosStar } from "react-icons/io";
 
 const CourseDetails = async ({ params }) => {
   const { id } = await params;
-  const res = await fetch("https://skillsphere-rho.vercel.app/data.json");
+  const res = await fetch(`${process.env.BASE_URL}/data.json`);
   const courses = await res.json();
   const course = courses.find((c) => c.id === parseInt(id));
 

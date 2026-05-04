@@ -6,7 +6,7 @@ import { FaStar, FaUserGraduate } from 'react-icons/fa6';
 
 const TopInstructor = async() => {
     const res = await fetch(
-      "https://skillsphere-rho.vercel.app/instructor.json",
+      `${process.env.BASE_URL}/instructor.json`,
     );
     const instructors = await res.json();
 
