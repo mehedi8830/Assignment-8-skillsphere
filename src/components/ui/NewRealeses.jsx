@@ -1,11 +1,12 @@
 import Image from 'next/image';
 import React from 'react';
 import { IoIosStar } from 'react-icons/io';
+import data from "../../../public/data.json";
 
 const NewReleases = async() => {
-    const res = await fetch(`${process.env.BASE_URL}/data.json`);
-    const courses = await res.json();
-    const newCourses = courses.slice(8, 12);
+    // const res = await fetch(`${process.env.BASE_URL}/data.json`);
+    // const courses = await res.json();
+    const newCourses = data.slice(8, 12);
     return (
       <div>
         <div className="max-w-6xl mx-auto px-6 mt-30 mb-20">

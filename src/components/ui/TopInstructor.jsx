@@ -3,12 +3,14 @@ import Image from 'next/image';
 import React from 'react';
 import { BiBriefcaseAlt2 } from 'react-icons/bi';
 import { FaStar, FaUserGraduate } from 'react-icons/fa6';
+import data from "../../../public/instructor.json";
 
 const TopInstructor = async() => {
-    const res = await fetch(
-      `${process.env.BASE_URL}/instructor.json`,
-    );
-    const instructors = await res.json();
+    // const res = await fetch(
+    //   `${process.env.BASE_URL}/instructor.json`,
+    // );
+    // const instructors = await res.json();
+    const instructors = data;
 
     return (
       <div className="my-20 max-w-6xl mx-auto px-6">

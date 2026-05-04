@@ -2,12 +2,13 @@ import React from "react";
 import { Button, Card, CloseButton, Separator } from "@heroui/react";
 import Image from "next/image";
 import { IoIosStar } from "react-icons/io";
+import data from "../../../../public/data.json";
 
 const CourseDetails = async ({ params }) => {
   const { id } = await params;
-  const res = await fetch(`${process.env.BASE_URL}/data.json`);
-  const courses = await res.json();
-  const course = courses.find((c) => c.id === parseInt(id));
+  // const res = await fetch(`${process.env.BASE_URL}/data.json`);
+  // const courses = await res.json();
+  const course = data.find((c) => c.id === parseInt(id));
 
   if (!course) {
     return (
