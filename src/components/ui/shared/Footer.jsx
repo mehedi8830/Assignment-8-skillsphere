@@ -20,7 +20,7 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <img
-                src={logo}
+                src={logo.src}
                 alt="SkillSphere logo"
                 width={32}
                 height={32}

@@ -82,12 +82,12 @@ const Navbar = () => {
           </button>
           <div className="flex gap-2 items-center">
             <img
-              src={logo}
+              src={logo.src}
               alt="logo"
               loading="eager"
               width={30}
               height={30}
-              className="object-cover h-auto w-auto"
+              className="object-cover size-4"
             />
             <h3 className="font-black text-xl text-[#2e3c8f]">SkillSphere</h3>
           </div>
