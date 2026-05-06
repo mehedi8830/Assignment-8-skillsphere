@@ -43,7 +43,9 @@ export default function LoginPage() {
       const { data, error } = await authClient.signIn.social({
         provider: "google",
       });
+      
       if (error) {
+        console.error("Google sign-in error:", error);
         toast.error(error.message || "Google sign-in failed");
         
       }
